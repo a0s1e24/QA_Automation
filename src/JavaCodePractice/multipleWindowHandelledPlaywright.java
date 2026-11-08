@@ -6,7 +6,7 @@ import com.microsoft.playwright.Playwright;
 public class multipleWindowHandelledPlaywright {
 
     public static void main(String[] args) {
-        try (Playwright playwright = Playwright.create()) {
+        try (Playwright playwright = Playswright.create()) {
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 
             Page parentPage = browser.newPage();
